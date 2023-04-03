@@ -1,0 +1,78 @@
+*{
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+    background: black;
+}
+
+
+.header {
+    border-bottom: 3px solid #32b9cd;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.header .container {
+    justify-content: space-between;
+}
+
+.header ul {
+    
+    color: #32b9cd;
+}
+.header ul #Cadastro {
+    font-weight: 1000;
+}
+
+ul {
+    color: #e3b062;
+}
+
+a {
+    color: #e3b062;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.titulo {
+    color: #32b9cd;
+    width: fit-content;
+    font-weight: 500;
+}
+
+.navBar {
+    width: 300px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+
+.banner {
+    background-image: url(../img/bg-jelly-fish-para_outras_pags.png);
+    height: 500px;
+    color: #fff;
+    display: flex;
+}
+
+.banner .container p span {
+    font-weight: 1000;
+}
+
+.banner .container {
+    font-size: 36px;
+    justify-content: center;
+}
+
+.banner .container p {
+    width: 30%;
+}
