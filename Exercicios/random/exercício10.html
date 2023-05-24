@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    os nomes das linhas de ônibus que ele pegou durante a semana <input type="text" id="linhas">
+    <button onclick="gravar()">gravar Buzão</button>
+    <button onclick="pesquisar()">pesquisar</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    var lista = []
+    function gravar() { 
+        var adicionar =   linhas.value
+        mensagem.innerHTML = ``
+        lista.unshift(adicionar)
+        var posição = lista.length -1
+        mensagem.innerHTML += `${posição}: ${lista}<br>`
+        // mensagem.innerHTML = ``
+        // if (lista.indexOf(adicionar) > -1){
+        //     mensagem.innerHTML =`voce ja pegou essa linha<br>`
+        // } else {
+        //     lista.unshift(adicionar)
+        // }mensagem.innerHTML +=`${lista}<br>`
+
+
+
+
+
+        // mensagem.innerHTML +=`${lista}<br>`
+        // for(var i = 0;i < lista.length;i++){
+        //     if (lista.indexOf(adicionar)> 0){
+        //         mensagem.innerHTML += `você já pegou essa linha nessa semana`
+        //     } else {
+        //         lista.push(adicionar)
+        //     }
+        // }
+    }
+    function pesquisar() {
+
+    }
+</script>

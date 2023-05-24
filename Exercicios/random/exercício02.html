@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sorte()">sortear</button>
+    <div id="msg"></div>
+</body>
+</html>
+<script>
+    function sorte() {
+        var numero = Math.random(2) * 5  
+        if (numero <1) {
+            msg.innerHTML = `<img src='img/a.jpg '>`
+        } else if (numero >1 &&numero <2) {
+            msg.innerHTML = `<img src="img/p.jpg" alt="">`
+        } else if (numero >2&& numero <3  ) {
+            msg.innerHTML = `<img src="img/c.jpg" alt="">`
+        } else {msg.innerHTML =`<img src="img/santos.jpg" alt="">`}
+    }
+</script>
+2. Crie um programa o qual: 
+
+a) Ao clicar no botão "Sortear time", faz aparecer somente um dos escudos dos 4 times de futebol de maior torcida do estado de São Paulo. Independente da imagem, todas devem ter 150px de altura. 

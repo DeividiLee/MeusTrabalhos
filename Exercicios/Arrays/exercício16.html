@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>    Análise de performance </h1>
+Entre com o Nome do aluno: <input type="text" id="NomeAluno">
+Entre com a Nota do aluno: <input type="text" id="NotaAluno">
+<button onclick="Registrar()">Registrar</button>
+<button onclick="Analisar()">Analisar</button>
+<div id="div"></div>
+</body>
+</html>
+<script>
+    ListaAluno = []
+    ListaNota = []
+    function Registrar(){
+        nomeAluno = NomeAluno.value
+        notaAluno = NotaAluno.value
+
+        if (NomeAluno = `` || Nota >10 || Nota <0){
+            div.innerHTML = `erro`
+        } else  {
+            ListaAluno.push(nomeAluno)
+            ListaNota.push(notaAluno)
+        }
+        for(i=0;i < ListaALuno.length;i ++){
+
+            div.innerHTML += `${ListaAluno[i]}: ${notaAluno[i]}`
+        }
+    }
+    function Analisar(){
+        
+    }
+</script>

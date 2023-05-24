@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    digite um número <input type="text" id="input_numero">
+    digite uma frase <input type="text" id="input_frase">
+    <button onclick="button()"></button>
+    <div id="div"></div>
+</body>
+</html>
+<script>
+    function button() {
+        var numero = input_numero.value
+        var frase = input_frase.value
+        var count = 1
+        while (count <= numero) {
+            div.innerHTML += `
+                ${count}. ${frase}<br>
+            `
+            count +=1
+        }
+
+    }
+</script>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Destinho de Viagem <input type="text" id="Destino"><br>
+    <button onclick="Adicionar()">Adicionar</button><br>
+    <button onclick="Primeira()">Primeira Viagem</button><br>
+    <button onclick="Terceira()">Terceira Viagem</button><br>
+    <button onclick="Ultima()">Última Viagem</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    var ListaViagens = []
+    function Adicionar() {
+        var viagem = Destino.value
+        ListaViagens.push(viagem)
+    }
+    function Primeira() {
+        if (ListaViagens.length == 0 ) {
+            mensagem.innerHTML = `ainda não viajou`
+
+        } else {
+            mensagem.innerHTML = ListaViagens[0]
+            // mensagem.innerHTML = `A primeira viagem é ${ListaViagens[0]}`
+        }
+    }
+    function Terceira() {
+        if(ListaViagens.length <3) {
+            mensagem.innerHTML = `ainda não fez a terceira viagem`
+        } else {
+            mensagem.innerHTML = ListaViagens[2]
+        }
+
+    }
+    function Ultima() {
+        if (ListaViagens > listaViagens[-1]) {
+            mensagem.innerHTML = ListaViagens[ListaViagens.length -1 ]
+            // o .length -1 serve para saber qual o último item da lista, funciona da seguinte forma,
+            //  se uma lista tem 10 itens, então a última posição é 9 pois, vai de 0 a 9 
+        } else {
+            mensagem.innerHTML = `ainda não fez nenhuma viagem`
+        }
+    }
+</script>

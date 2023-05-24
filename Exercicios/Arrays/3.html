@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    bairros onde já morou <input type="text" id="morou">
+    indice do bairro onde já morou <input type="text" id="indice">
+    <button onclick="bairro()">Cadastrar bairro</button>
+    <button onclick="relembrar()">relembrar</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    var ListaBairro =  []
+    function bairro() {
+        var bairro = morou.value
+        
+        ListaBairro.push(bairro)
+    }
+    function relembrar() {
+        var numero = indice.value
+        if(numero > ListaBairro.length) {
+            mensagem.innerHTML = `Você ainda não morou nessa quantidade de bairros`
+        } else {
+            mensage.innerHTML = ListaBairro[ListaBairro -1]
+        }
+    }
+</script>

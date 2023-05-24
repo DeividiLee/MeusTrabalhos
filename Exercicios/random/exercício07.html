@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="sortear()">sortear imagem</button>
+    <div id="div"></div>
+</body>
+</html>
+<script>
+    lista = []
+    // var max = 5
+    function sortear() {
+        if(lista.length > 0 ) {
+            // var posicaosorteada = parseInt(Math.random() *5)
+            var posicaosorteada = parseInt(Math.random() * lista.length)
+            console.log(lista)
+            // parseInt serve para transformar o número em inteieri: 0.99 => 1
+            img_sorteada.src = lista[poicaosorteada]
+            lista.splice(posicaosorteada, 1)
+            // max -=1
+            //  não entendi direito isso
+        } else {
+            alert('Não há mais imagens para exibir')
+        }
+        
+    }
+</script>
+a) Tenha cinco imagens da sua escolha salva em algum lugar;
+
+b) Ao clicar no botão "Sortear imagem" faça:
+
+    b.1) Selecione uma imagem da lista e mostre na tela;
+
+c) Após mostrar a imagem, retire-a da lista (não poderá aparecer novamente);
+
+d) Caso o usuário tente sortear após a lista esvaziar, mostre uma mensagem de erro.

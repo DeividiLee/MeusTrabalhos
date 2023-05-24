@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    o nome da pessoa que o usuário mais ama na sua vida <input type="text" id="input_nome">
+    quanto voce ama ela? <input type="number" id="input_nível">
+    <button onclick="button()"></button>
+    <div id="div"></div>
+</body>
+</html>
+<script>
+ function button() {
+    var nome = input_nome.value
+    var contagem = 1
+    var nível = input_nível.value
+    while ( contagem <= nível ) { 
+        
+        div.innerHTML += `
+        ${contagem}- ${nome}, eu te amo! Sempre lembre disso!<br>
+        `
+        contagem += 1
+    }
+ }
+</script>

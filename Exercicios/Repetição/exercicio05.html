@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="button()">números cabalísticos</button>
+    <div id="div"></div>
+</body>
+</html>
+<script>
+    function button() {
+        var número = 1
+        while (número <= 30) {
+            if (número !=3  &&
+            número != 4 &&
+            número != 7 &&
+            número != 10 &&
+            número != 12 
+            )
+            div.innerHTML += `${número}<br>`
+            número +=1
+        }
+    } 
+</script>

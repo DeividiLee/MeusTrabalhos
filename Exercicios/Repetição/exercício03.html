@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="button()">Diga algo sobre a matéria de Algoritmos</button>
+    <div id="div"></div>
+</body>
+</html>
+<script>
+    function button() {
+        var texto = "A disciplina tem muita prática"
+        quantidade = 1
+        div.innerHTML = ""
+        while (quantidade <=7) {
+            div.innerHTML += `${quantidade}. ${texto} <br>`
+            quantidade += 1
+        }
+    }
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    receber um numero <input type="text" id="input_numero">
+    receber um segundo numero <input type="text" id="input_segundoNumero">
+    <button onclick="botão()"> Somar Números</button>
+    <div id="div1"></div>
+</body>
+</html>
+<script>
+    function botão() {
+        var soma = 0
+        var numero = input_numero.value
+        var numero2 = input_segundoNumero.value
+        for(contador = 1;contador <= numero;contador +=1){
+            if(numero2 % contador ==0) {
+                div1.innerHTML += `${contador}<br>`
+                soma += contador
+            }
+        } div1.inneHTML += `Soma dos Múltiplos: ${soma}`
+    }
+</script>

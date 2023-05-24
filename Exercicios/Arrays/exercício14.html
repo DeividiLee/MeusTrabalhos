@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Insira o nome do produto:
+    <input id="nomeProduto"> <br>
+    Insira o preço do produto:
+    <input type="text" id="preçoProduto"> <br>
+
+    <button onclick="cadastrar()">Cadastrar</button>
+    <button onclick="relatório()">Relatório de Estoque</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+
+<script>
+    var listaNome = []
+    var listaPreço = []
+    
+    function cadastrar() {
+        var nome = nomeProduto.value;
+        var preço = preçoProduto.value;
+
+        listaNome.push(nome)
+        listaPreço.push(preço)
+
+    }
+
+    var preçototal = 0;
+
+    function relatório() {
+        var max = Math.max(listaNome)
+        var min = Math.min(listaNome)
+        var soma = Number(max + min)
+        var media = Number(soma/ listaNome.length)
+        mensagem.innerHTML = `produtos: ${listaNome.length}, ${listaNome}> ${listaPreço} <br>`
+        mensagem.innerHTML += `${max} <br> ${min}<br> ${soma} <br> ${media}`
+    }
+</script>
+

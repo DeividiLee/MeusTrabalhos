@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    digite um número entre 20 e 100 <input type="number" min="20" max="100" id="input_número">
+    <button onclick="button()">Adoro múltiplos de 5</button>
+    <div id="div"></div>
+</body>
+</html>
+<script>
+    function button() {
+        var escolhido = Number(input_número.value)
+        var nãosei = 1
+        div.innerHTML = ``
+        while (nãosei <= escolhido) {
+            if (nãosei % 5 == 0) {
+               div.innerHTML += `${nãosei}<br>`
+            }
+            nãosei +=1  
+        }
+    }
+</script>

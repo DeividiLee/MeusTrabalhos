@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    nome do projeto: <input type="text" id="nomeProjeto">
+    <button onclick="Registrar()">Registrar projeto</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    var listaProjeto = []
+    function Registrar(){
+        var projeto = nomeProjeto.value
+        listaProjeto = [projeto]
+        for (numero = 0;numero <listaProjeto.length;numero ++) {
+            mensagem.innerHTML += `listaProjeto[posicao
+        ]`
+        }
+    }
+</script>
+9. a) Pergunte para o usuário o nome de cada projeto que já criou na vida. Ele digita e clica em "Registrar projeto". Na medida que ele vai cadastrando, verifique quantos projetos já foram cadastrados e exiba o seguinte texto abaixo: 
+
+Você já fez X projetos. Por isso você é um profissional Z 
+
+X é a quantidade de projetos e Z é seu nível de experiência, segundo estas regras: 
+
+  0 a 4: Júnior 
+
+  5 a 12: Pleno desde o projeto "nome do 5º projeto" 
+
+u mais: Sênior desde o projeto "nome do 13º projeto" 
+
+b)  Tenha um botão “Mostrar Projetos” que quando clicado mostra os projetos cadastrados, um abaixo do outro, em ordem inversa ao que foi cadastrado.

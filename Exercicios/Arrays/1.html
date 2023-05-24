@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    digita uma fruta <input type="text" id="fruta">
+    <button onclick="botão()">Pesquisar</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+<script>
+    function botão() {
+        var fruta2 = fruta.value
+        var listasFrutas = ["Abacate","Tomate","Melância","Maçã","Melão"]
+        if (listasFrutas.indexOf(fruta2)> -1) {
+            mensagem.innerHTML = `A ${fruta2} está na lista`
+        } else {
+            mensagem.innerHTML = `A ${fruta2} não está na lista`
+        }
+    }
+</script>

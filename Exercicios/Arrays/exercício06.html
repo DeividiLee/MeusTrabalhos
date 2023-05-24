@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    nome do filme: <input type="text" id="filme">
+   
+    <button onclick="cadastrar()">cadastrar</button>
+    <div id="mensagem"></div>
+</body>
+</html>
+
+<script>
+    var listafilmes = []
+    listafilmes = [
+        batman //0
+        sonic //1
+        filme 3//2
+        filme4 //3
+]
+listafilmes.length //4 de comprimento
+    function cadastrar() {
+        var filme = filme.value
+        listafilmes.push(filme)
+        
+        for (
+            var posicao = 0;
+            posicao < listafilmes.length;
+            posicao ++
+            )
+            {
+                var filmedalista = listafilmes[posicao]
+                mensagem.innerTHML += `${filmedalista}<br>`
+            }
+    }
+</script>
